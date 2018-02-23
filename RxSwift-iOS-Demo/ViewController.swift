@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    @IBAction func ButtonPressed(_ sender: Any) {
+        switch ((sender as AnyObject).tag) {
+        case 1:
+            navigationController?.pushViewController(CreateOperatorVC(), animated: true)
+//            let newViewController = CreateOperatorVC()
+//            self.navigationController?.pushViewController(newViewController, animated: true)
+        default:
+            print("Nothing Selected")
+        }
+        
+    }
 }
 

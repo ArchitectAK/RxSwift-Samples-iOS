@@ -7,29 +7,38 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class CreateOperatorVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        createOperator()
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func createOperator()  {
+        let source : Observable = Observable<Int>.create { observer in
+            for i in 1...5 {
+                observer.on(.next(i))
+            }
+            observer.on(.completed)
+            
+            // Note that this is optional. If you require no cleanup you can return
+            // `Disposables.create()` (which returns the `NopDisposable` singleton)
+            return Disposables.create {
+                print("disposed")
+            }
+        }
+        
+        source.subscribe {
+            print($0)
+        }
     }
-    */
 
 }

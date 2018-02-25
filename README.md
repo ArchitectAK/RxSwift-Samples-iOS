@@ -3,6 +3,15 @@ Learning RxSwift for iOS by Examples -How to use RxSwift in iOS
 
 
 
+# Operators :
+* `Create` -> Creates an Observable from scratch by means of a function
+
+* Coming More
+## TODO
+
+Adding more operator examples
+
+
 
 
 ### Contact - Let's connect to learn together

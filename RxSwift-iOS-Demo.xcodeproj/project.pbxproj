@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		28C947E6BFCD291B705F28E6 /* Pods_RxSwift_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66504470955688D3B98F7BBF /* Pods_RxSwift_iOS_Demo.framework */; };
+		BC28FFC320426E5F000B0BD7 /* GenerateOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC28FFC220426E5F000B0BD7 /* GenerateOperatorViewController.swift */; };
 		BC74E9AA203D759000B5445A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74E9A9203D759000B5445A /* AppDelegate.swift */; };
 		BC74E9AC203D759000B5445A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74E9AB203D759000B5445A /* ViewController.swift */; };
 		BC74E9AF203D759000B5445A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9AD203D759000B5445A /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		03E4C6943892920F65586CD6 /* Pods-RxSwift-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-iOS-Demo/Pods-RxSwift-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		25A340483123E677C7F2AACE /* Pods-RxSwift-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-iOS-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-iOS-Demo/Pods-RxSwift-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		66504470955688D3B98F7BBF /* Pods_RxSwift_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC28FFC220426E5F000B0BD7 /* GenerateOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateOperatorViewController.swift; sourceTree = "<group>"; };
 		BC74E9A6203D759000B5445A /* RxSwift-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC74E9A9203D759000B5445A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC74E9AB203D759000B5445A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				BC74E9BC203D762800B5445A /* CreateOperatorVC.swift */,
+				BC28FFC220426E5F000B0BD7 /* GenerateOperatorViewController.swift */,
 			);
 			path = RxOperators;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC74E9AC203D759000B5445A /* ViewController.swift in Sources */,
+				BC28FFC320426E5F000B0BD7 /* GenerateOperatorViewController.swift in Sources */,
 				BC74E9AA203D759000B5445A /* AppDelegate.swift in Sources */,
 				BC74E9BD203D762800B5445A /* CreateOperatorVC.swift in Sources */,
 			);

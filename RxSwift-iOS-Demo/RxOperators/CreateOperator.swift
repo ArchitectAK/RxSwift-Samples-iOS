@@ -11,8 +11,8 @@ import RxSwift
 import RxCocoa
 class CreateOperator {
     
-    func createOperator() {
-        let source : Observable = Observable<Int>.create {
+    func createOperator() -> Observable<Int> {
+        return Observable<Int>.create {
             observer in
             for i in 1...5 {
                 observer.on(.next(i))
@@ -26,9 +26,9 @@ class CreateOperator {
             }
         }
         
-        source.subscribe {
-            print($0)
-            
-        }
+//        source.subscribe {
+//            print($0)
+//
+//        }
     }
 }

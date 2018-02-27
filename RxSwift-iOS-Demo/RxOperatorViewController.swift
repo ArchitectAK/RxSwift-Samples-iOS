@@ -11,12 +11,22 @@ import UIKit
 class RxOperatorViewController: UIViewController {
     
     var tagNumber = 0
-
+    
     @IBOutlet weak var output: UILabel!
     @IBAction func executeOperator(_ sender: Any) {
         switch tagNumber {
         case 1:
-            CreateOperator().createOperator()
+            CreateOperator().createOperator().subscribe(
+                onNext:{(r) in
+                        self.output.text = "\(r)"
+                },
+                onError: {  (error) in                                                          print(error.localizedDescription)
+                    
+            },
+                onCompleted:{
+                print("onCompleted")
+                    
+            })
         case 2:
             GenerateOperator().executeGenerateOperator()
         default:
@@ -27,10 +37,10 @@ class RxOperatorViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

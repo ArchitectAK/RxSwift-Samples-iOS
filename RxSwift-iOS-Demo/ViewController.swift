@@ -12,47 +12,34 @@ import RxCocoa
 
 class ViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        createOperator()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     @IBAction func ButtonPressed(_ sender: Any) {
         switch ((sender as AnyObject).tag) {
         case 1:
-            navigationController?.pushViewController(CreateOperatorVC(), animated: true)
-            //            let newViewController = CreateOperatorVC()
-        //            self.navigationController?.pushViewController(newViewController, animated: true)
+            let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController
+            //self.present(newVC, animated: true, completion: nil)
+            //let newViewController = RxOperatorViewController(nibName: "RxOperatorViewController",
+//                                                            bundle: nil)
+            self.navigationController?.pushViewController(newVC, animated: true)
+//            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let newViewController = storyBoard.instantiateViewController(withIdentifier: "RxOperatorViewController") as! RxOperatorViewController
+//            self.present(newViewController, animated: true)
+        case 2:
+            let newViewController = RxOperatorViewController()
+            self.navigationController?.pushViewController(newViewController, animated: true)
+            
         default:
             print("Nothing Selected")
         }
-        
     }
-    func createOperator()  {
-        let source : Observable = Observable<Int>
-            .create { observer in
-            for i in 1...5 {
-                observer.on(.next(i))
-            }
-            observer.on(.completed)
-            
-            // Note that this is optional. If you require no cleanup you can return
-            // `Disposables.create()` (which returns the `NopDisposable` singleton)
-            return Disposables.create {
-                print("disposed")
-            }
-        }
-        
-        source.subscribe {
-            print($0)
-        }
-    }
-    
 }
 

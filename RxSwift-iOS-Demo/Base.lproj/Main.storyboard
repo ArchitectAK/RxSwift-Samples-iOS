@@ -95,6 +95,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VLK-oH-tJf"/>
                     </view>
+                    <connections>
+                        <outlet property="output" destination="sNz-EX-ABT" id="WF8-lR-n6V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQM-86-uPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

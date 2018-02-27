@@ -10,8 +10,9 @@ import UIKit
 
 class RxOperatorViewController: UIViewController {
 
+    @IBOutlet weak var output: UILabel!
     @IBAction func executeOperator(_ sender: Any) {
-        
+    
         CreateOperator().createOperator()
         
     }

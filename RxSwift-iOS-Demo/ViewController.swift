@@ -26,17 +26,13 @@ class ViewController: UIViewController {
         switch ((sender as AnyObject).tag) {
         case 1:
             let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController
-            //self.present(newVC, animated: true, completion: nil)
-            //let newViewController = RxOperatorViewController(nibName: "RxOperatorViewController",
-//                                                            bundle: nil)
+            newVC.tagNumber = 1
             self.navigationController?.pushViewController(newVC, animated: true)
-//            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let newViewController = storyBoard.instantiateViewController(withIdentifier: "RxOperatorViewController") as! RxOperatorViewController
-//            self.present(newViewController, animated: true)
         case 2:
-            let newViewController = RxOperatorViewController()
-            self.navigationController?.pushViewController(newViewController, animated: true)
-            
+        
+            let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController
+            newVC.tagNumber = 2
+            self.navigationController?.pushViewController(newVC, animated: true)
         default:
             print("Nothing Selected")
         }

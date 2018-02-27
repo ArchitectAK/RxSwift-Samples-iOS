@@ -10,8 +10,10 @@ import Foundation
 import RxSwift
 import RxCocoa
 class CreateOperator {
-    func createOperator()  {
-        let source : Observable = Observable<Int>.create { observer in
+    
+    func createOperator() {
+        let source : Observable = Observable<Int>.create {
+            observer in
             for i in 1...5 {
                 observer.on(.next(i))
             }
@@ -26,8 +28,7 @@ class CreateOperator {
         
         source.subscribe {
             print($0)
+            
         }
-        
     }
-
 }

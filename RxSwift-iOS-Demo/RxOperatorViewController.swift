@@ -9,11 +9,20 @@
 import UIKit
 
 class RxOperatorViewController: UIViewController {
+    
+    var tagNumber = 0
 
     @IBOutlet weak var output: UILabel!
     @IBAction func executeOperator(_ sender: Any) {
-    
-        CreateOperator().createOperator()
+        switch tagNumber {
+        case 1:
+            CreateOperator().createOperator()
+        case 2:
+            GenerateOperator().executeGenerateOperator()
+        default:
+            print("Nothing")
+            
+        }
         
     }
     override func viewDidLoad() {

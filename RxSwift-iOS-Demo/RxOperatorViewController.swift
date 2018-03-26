@@ -29,6 +29,8 @@ class RxOperatorViewController: UIViewController {
             })
         case 2:
             GenerateOperator().executeGenerateOperator()
+        case 3:
+            MapOperator().executeMapOperator()
         default:
             print("Nothing")
             

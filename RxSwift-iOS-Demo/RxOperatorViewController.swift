@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class RxOperatorViewController: UIViewController {
     
@@ -16,17 +18,19 @@ class RxOperatorViewController: UIViewController {
     @IBAction func executeOperator(_ sender: Any) {
         switch tagNumber {
         case 1:
-            CreateOperator().createOperator().subscribe(
-                onNext:{(r) in
-                        self.output.text = "\(r)"
-                },
-                onError: {  (error) in                                                          print(error.localizedDescription)
-                    
-            },
-                onCompleted:{
-                print("onCompleted")
-                    
-            })
+//            CreateOperator().createOperator().subscribe(
+//                onNext:{(r) in
+//                        self.output.text = "\(r)"
+//                },
+//                onError: {  (error) in                                                          print(error.localizedDescription)
+//
+//            },
+//                onCompleted:{
+//                print("onCompleted")
+//
+//            })
+            
+              CreateOperator().createOperator()
         case 2:
             GenerateOperator().executeGenerateOperator()
         case 3:

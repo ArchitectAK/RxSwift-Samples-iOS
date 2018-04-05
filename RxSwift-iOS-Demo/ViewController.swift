@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       let v = CreateOperatorViewController()
+        self.navigationController?.pushViewController(v, animated: false)
+        
     }
     
     override func didReceiveMemoryWarning() {

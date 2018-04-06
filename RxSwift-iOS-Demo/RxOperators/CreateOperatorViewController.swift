@@ -39,8 +39,7 @@ class CreateOperatorViewController : UIViewController {
         }
         source.subscribe(
             onNext: {
-                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n onNext "
-                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n" + "\($0)"
+                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n onNext " + "\($0)"
                 print($0)
             },onCompleted : {
                 self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n" + " onCompleted"

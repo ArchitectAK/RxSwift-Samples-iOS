@@ -7,40 +7,53 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
-class CreateOperatorViewController: UIViewController {
-
+class CreateOperatorViewController : UIViewController {
+    
+    var myCustomView : CommonView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-        if let myCustomView = Bundle.main.loadNibNamed("CommonView", owner: self, options: nil)?.first as? CommonView{
-            myCustomView.frame = self.view.frame
-            myCustomView.commonBtn.addTarget(self, action: #selector(ViewController1.btnAction(_:)), for: .touchUpInside)
-            self.view.addSubview(myCustomView)
-        }
+        
+        myCustomView = (Bundle.main.loadNibNamed("CommonView", owner: self, options: nil)?.first as? CommonView)!
+        myCustomView?.frame = self.view.frame
+        myCustomView?.commonBtn.addTarget(self, action: #selector(btnAction(_:)), for: .touchUpInside)
+        self.view.addSubview(myCustomView!)
+        
     }
     
     @objc func btnAction(_ sender: Any)  {
         
-        print("BTn Action")
+        let source :Observable = Observable<String>.create { observer in
+            for i in 1...10{
+                observer.on(.next("\(i)"))
+            }
+            observer.on(.completed)
+            return Disposables.create {
+                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n" + " Disposable disposed"
+            }
+        }
+        source.subscribe(
+            onNext: {
+                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n onNext "
+                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n" + "\($0)"
+                print($0)
+            },onCompleted : {
+                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n" + " onCompleted"
+            },onDisposed: {
+                self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n" + " onDisposed"
+            }
+        )
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

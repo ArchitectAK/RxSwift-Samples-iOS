@@ -15,9 +15,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       let v = CreateOperatorViewController()
-        self.navigationController?.pushViewController(v, animated: false)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,9 +25,11 @@ class ViewController: UIViewController {
     @IBAction func ButtonPressed(_ sender: Any) {
         switch ((sender as AnyObject).tag) {
         case 1:
-            let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController
-            newVC.tagNumber = 1
-            self.navigationController?.pushViewController(newVC, animated: true)
+//            let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController
+//            newVC.tagNumber = 1
+//            self.navigationController?.pushViewController(newVC, animated: true)
+            let v = CreateOperatorViewController()
+            self.navigationController?.pushViewController(v, animated: false)
         case 2:
         
             let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController

@@ -16,23 +16,30 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-20-Eg3">
-                    <rect key="frame" x="139" y="274" width="42" height="21"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-n4-gZn">
+                    <rect key="frame" x="16" y="90" width="288" height="30"/>
+                    <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Tap to execute"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVv-20-Eg3">
+                    <rect key="frame" x="16" y="140" width="288" height="61"/>
+                    <string key="text" base64-UTF8="YES">
+Cgo
+</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-n4-gZn">
-                    <rect key="frame" x="137" y="204" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.59987942849999998" green="0.66471708640000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="VVv-20-Eg3" secondAttribute="trailing" constant="16" id="6c3-PP-na5"/>
                 <constraint firstItem="Bg4-n4-gZn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ARg-LG-tEO"/>
-                <constraint firstItem="VVv-20-Eg3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MZj-mS-ztH"/>
-                <constraint firstItem="VVv-20-Eg3" firstAttribute="top" secondItem="Bg4-n4-gZn" secondAttribute="bottom" constant="40" id="agV-es-l9t"/>
-                <constraint firstItem="VVv-20-Eg3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="p5p-f2-YOS"/>
+                <constraint firstItem="VVv-20-Eg3" firstAttribute="top" secondItem="Bg4-n4-gZn" secondAttribute="bottom" constant="20" id="C9O-uv-qgz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bg4-n4-gZn" secondAttribute="trailing" constant="16" id="Fn2-ba-QN5"/>
+                <constraint firstItem="Bg4-n4-gZn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="70" id="JDC-RQ-NfW"/>
+                <constraint firstItem="VVv-20-Eg3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="jMj-U4-4mp"/>
+                <constraint firstItem="Bg4-n4-gZn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="l3A-16-eWl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>

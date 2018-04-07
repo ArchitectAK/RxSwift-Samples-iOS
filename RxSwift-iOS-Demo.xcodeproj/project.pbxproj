@@ -18,7 +18,7 @@
 		BC74E9AF203D759000B5445A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9AD203D759000B5445A /* Main.storyboard */; };
 		BC74E9B1203D759000B5445A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9B0203D759000B5445A /* Assets.xcassets */; };
 		BC74E9B4203D759000B5445A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9B2203D759000B5445A /* LaunchScreen.storyboard */; };
-		BCD8D2EA20453D980026007D /* GenerateOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8D2E920453D980026007D /* GenerateOperator.swift */; };
+		BCD8D2EA20453D980026007D /* GenerateOperatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8D2E920453D980026007D /* GenerateOperatorVC.swift */; };
 		BCD8D2EC20453DA90026007D /* MapOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8D2EB20453DA90026007D /* MapOperator.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		BC74E9B0203D759000B5445A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC74E9B3203D759000B5445A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC74E9B5203D759000B5445A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BCD8D2E920453D980026007D /* GenerateOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateOperator.swift; sourceTree = "<group>"; };
+		BCD8D2E920453D980026007D /* GenerateOperatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateOperatorVC.swift; sourceTree = "<group>"; };
 		BCD8D2EB20453DA90026007D /* MapOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOperator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				BC1B9C652076254C006350E8 /* CreateOperatorViewController.swift */,
-				BCD8D2E920453D980026007D /* GenerateOperator.swift */,
+				BCD8D2E920453D980026007D /* GenerateOperatorVC.swift */,
 				BCD8D2EB20453DA90026007D /* MapOperator.swift */,
 			);
 			path = RxOperators;
@@ -284,7 +284,7 @@
 			files = (
 				BC1B9C662076254C006350E8 /* CreateOperatorViewController.swift in Sources */,
 				BCD8D2EC20453DA90026007D /* MapOperator.swift in Sources */,
-				BCD8D2EA20453D980026007D /* GenerateOperator.swift in Sources */,
+				BCD8D2EA20453D980026007D /* GenerateOperatorVC.swift in Sources */,
 				BC1B9C64207623D8006350E8 /* CommonView.swift in Sources */,
 				BC74E9AC203D759000B5445A /* ViewController.swift in Sources */,
 				BC1B9C6D20788222006350E8 /* BaseViewController.swift in Sources */,

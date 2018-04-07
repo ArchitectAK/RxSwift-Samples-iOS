@@ -25,11 +25,11 @@ class ViewController: UIViewController {
     @IBAction func ButtonPressed(_ sender: Any) {
         switch ((sender as AnyObject).tag) {
         case 1:
-//            let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController
-//            newVC.tagNumber = 1
-//            self.navigationController?.pushViewController(newVC, animated: true)
             let v = CreateOperatorViewController()
-            self.navigationController?.pushViewController(v, animated: false)
+            self.navigationController?.pushViewController(v, animated: true)
+        case 2:
+            let v = GenerateOperatorVC()
+            self.navigationController?.pushViewController(v, animated: true)
         default:
             print("Nothing Selected")
         }

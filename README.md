@@ -15,7 +15,7 @@ Adding more operator examples
 
 # Highlights :
 *  `CreateOperatorViewController` -> https://github.com/AnkitDroidGit/RxSwift-iOS/blob/master/RxSwift-iOS-Demo/ViewControllers/RxOperators/CreateOperatorViewController.swift
-*  `GenerateOperatorVC -> https://github.com/AnkitDroidGit/RxSwift-iOS/blob/master/RxSwift-iOS-Demo/ViewControllers/RxOperators/GenerateOperatorVC.swift
+*  `GenerateOperatorVC` -> https://github.com/AnkitDroidGit/RxSwift-iOS/blob/master/RxSwift-iOS-Demo/ViewControllers/RxOperators/GenerateOperatorVC.swift
 *  `MapOperator` -> Coming soon
 
 

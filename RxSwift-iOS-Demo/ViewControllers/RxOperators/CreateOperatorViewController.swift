@@ -10,25 +10,18 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class CreateOperatorViewController : UIViewController {
-    
-    var myCustomView : CommonView?
+class CreateOperatorViewController : BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
-        myCustomView = (Bundle.main.loadNibNamed("CommonView", owner: self, options: nil)?.first as? CommonView)!
-        myCustomView?.frame = self.view.frame
-        myCustomView?.commonBtn.addTarget(self, action: #selector(btnAction(_:)), for: .touchUpInside)
-        self.view.addSubview(myCustomView!)
-        
+
     }
     
-    @objc func btnAction(_ sender: Any)  {
+    override func btnAction(_ sender: Any)  {
         
-        let source :Observable = Observable<String>.create { observer in
+        let source : Observable = Observable<String>.create { observer in
             for i in 1...10{
                 observer.on(.next("\(i)"))
             }

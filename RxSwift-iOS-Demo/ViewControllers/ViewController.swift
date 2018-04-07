@@ -30,11 +30,6 @@ class ViewController: UIViewController {
 //            self.navigationController?.pushViewController(newVC, animated: true)
             let v = CreateOperatorViewController()
             self.navigationController?.pushViewController(v, animated: false)
-        case 2:
-        
-            let newVC = storyboard?.instantiateViewController(withIdentifier: "rxOperatorViewController") as! RxOperatorViewController
-            newVC.tagNumber = 2
-            self.navigationController?.pushViewController(newVC, animated: true)
         default:
             print("Nothing Selected")
         }

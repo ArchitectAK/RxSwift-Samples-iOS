@@ -26,7 +26,7 @@
 		03E4C6943892920F65586CD6 /* Pods-RxSwift-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-iOS-Demo/Pods-RxSwift-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		25A340483123E677C7F2AACE /* Pods-RxSwift-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-iOS-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-iOS-Demo/Pods-RxSwift-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		66504470955688D3B98F7BBF /* Pods_RxSwift_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC07A0E12068987400531566 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "RxSwift-iOS-Demo/Supporting Files/README.md"; sourceTree = SOURCE_ROOT; };
+		BC07A0E12068987400531566 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "RxSwift-iOS-Demo/README.md"; sourceTree = SOURCE_ROOT; };
 		BC1B9C61207622FE006350E8 /* CommonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonView.xib; sourceTree = "<group>"; };
 		BC1B9C63207623D8006350E8 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		BC1B9C652076254C006350E8 /* CreateOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOperatorViewController.swift; sourceTree = "<group>"; };
@@ -99,18 +99,11 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		BC1B9C6B207881FD006350E8 /* Supporting Files */ = {
+		BC74E99D203D759000B5445A = {
 			isa = PBXGroup;
 			children = (
 				BC07A0E12068987400531566 /* README.md */,
 				BC74E9B5203D759000B5445A /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BC74E99D203D759000B5445A = {
-			isa = PBXGroup;
-			children = (
 				BC74E9A8203D759000B5445A /* RxSwift-iOS-Demo */,
 				BC74E9A7203D759000B5445A /* Products */,
 				260AF1CEF6A42E42B8320EDA /* Pods */,
@@ -129,7 +122,6 @@
 		BC74E9A8203D759000B5445A /* RxSwift-iOS-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				BC1B9C6B207881FD006350E8 /* Supporting Files */,
 				BC1B9C6A207881E2006350E8 /* ViewControllers */,
 				BC1B9C69207881B6006350E8 /* View */,
 				BC1B9C6820788179006350E8 /* CustomView */,

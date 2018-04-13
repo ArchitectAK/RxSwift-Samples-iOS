@@ -8,31 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		28C947E6BFCD291B705F28E6 /* Pods_RxSwift_iOS_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66504470955688D3B98F7BBF /* Pods_RxSwift_iOS_Demo.framework */; };
-		BC07A0E22068987400531566 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC07A0E12068987400531566 /* README.md */; };
 		BC1B9C62207622FE006350E8 /* CommonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC1B9C61207622FE006350E8 /* CommonView.xib */; };
 		BC1B9C64207623D8006350E8 /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B9C63207623D8006350E8 /* CommonView.swift */; };
 		BC1B9C662076254C006350E8 /* CreateOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B9C652076254C006350E8 /* CreateOperatorViewController.swift */; };
 		BC1B9C6D20788222006350E8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B9C6C20788222006350E8 /* BaseViewController.swift */; };
 		BC1B9C6F20788898006350E8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC1B9C6E20788898006350E8 /* README.md */; };
+		BC3FF13220806F7D00D41AC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FF13120806F7D00D41AC1 /* User.swift */; };
 		BC74E9AA203D759000B5445A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74E9A9203D759000B5445A /* AppDelegate.swift */; };
 		BC74E9AC203D759000B5445A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74E9AB203D759000B5445A /* ViewController.swift */; };
 		BC74E9AF203D759000B5445A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9AD203D759000B5445A /* Main.storyboard */; };
 		BC74E9B1203D759000B5445A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9B0203D759000B5445A /* Assets.xcassets */; };
 		BC74E9B4203D759000B5445A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9B2203D759000B5445A /* LaunchScreen.storyboard */; };
 		BCD8D2EA20453D980026007D /* GenerateOperatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8D2E920453D980026007D /* GenerateOperatorVC.swift */; };
-		BCD8D2EC20453DA90026007D /* MapOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8D2EB20453DA90026007D /* MapOperator.swift */; };
+		BCD8D2EC20453DA90026007D /* MapOperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8D2EB20453DA90026007D /* MapOperatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03E4C6943892920F65586CD6 /* Pods-RxSwift-iOS-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-iOS-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-iOS-Demo/Pods-RxSwift-iOS-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		25A340483123E677C7F2AACE /* Pods-RxSwift-iOS-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift-iOS-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwift-iOS-Demo/Pods-RxSwift-iOS-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		66504470955688D3B98F7BBF /* Pods_RxSwift_iOS_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_iOS_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC07A0E12068987400531566 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "RxSwift-iOS-Demo/README.md"; sourceTree = SOURCE_ROOT; };
 		BC1B9C61207622FE006350E8 /* CommonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonView.xib; sourceTree = "<group>"; };
 		BC1B9C63207623D8006350E8 /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		BC1B9C652076254C006350E8 /* CreateOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOperatorViewController.swift; sourceTree = "<group>"; };
 		BC1B9C6C20788222006350E8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BC1B9C6E20788898006350E8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		BC3FF13120806F7D00D41AC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BC74E9A6203D759000B5445A /* RxSwift-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC74E9A9203D759000B5445A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC74E9AB203D759000B5445A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +41,7 @@
 		BC74E9B3203D759000B5445A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC74E9B5203D759000B5445A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCD8D2E920453D980026007D /* GenerateOperatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateOperatorVC.swift; sourceTree = "<group>"; };
-		BCD8D2EB20453DA90026007D /* MapOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOperator.swift; sourceTree = "<group>"; };
+		BCD8D2EB20453DA90026007D /* MapOperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapOperatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,17 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		BC3FF13020806F6B00D41AC1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BC3FF13120806F7D00D41AC1 /* User.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		BC74E99D203D759000B5445A = {
 			isa = PBXGroup;
 			children = (
-				BC07A0E12068987400531566 /* README.md */,
 				BC74E9B5203D759000B5445A /* Info.plist */,
 				BC74E9A8203D759000B5445A /* RxSwift-iOS-Demo */,
 				BC74E9A7203D759000B5445A /* Products */,
@@ -124,6 +131,7 @@
 		BC74E9A8203D759000B5445A /* RxSwift-iOS-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				BC3FF13020806F6B00D41AC1 /* model */,
 				BC1B9C6E20788898006350E8 /* README.md */,
 				BC1B9C6A207881E2006350E8 /* ViewControllers */,
 				BC1B9C69207881B6006350E8 /* View */,
@@ -139,7 +147,7 @@
 			children = (
 				BC1B9C652076254C006350E8 /* CreateOperatorViewController.swift */,
 				BCD8D2E920453D980026007D /* GenerateOperatorVC.swift */,
-				BCD8D2EB20453DA90026007D /* MapOperator.swift */,
+				BCD8D2EB20453DA90026007D /* MapOperatorViewController.swift */,
 			);
 			path = RxOperators;
 			sourceTree = "<group>";
@@ -209,7 +217,6 @@
 				BC1B9C6F20788898006350E8 /* README.md in Resources */,
 				BC74E9B4203D759000B5445A /* LaunchScreen.storyboard in Resources */,
 				BC74E9B1203D759000B5445A /* Assets.xcassets in Resources */,
-				BC07A0E22068987400531566 /* README.md in Resources */,
 				BC74E9AF203D759000B5445A /* Main.storyboard in Resources */,
 				BC1B9C62207622FE006350E8 /* CommonView.xib in Resources */,
 			);
@@ -279,9 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1B9C662076254C006350E8 /* CreateOperatorViewController.swift in Sources */,
-				BCD8D2EC20453DA90026007D /* MapOperator.swift in Sources */,
+				BCD8D2EC20453DA90026007D /* MapOperatorViewController.swift in Sources */,
 				BCD8D2EA20453D980026007D /* GenerateOperatorVC.swift in Sources */,
 				BC1B9C64207623D8006350E8 /* CommonView.swift in Sources */,
+				BC3FF13220806F7D00D41AC1 /* User.swift in Sources */,
 				BC74E9AC203D759000B5445A /* ViewController.swift in Sources */,
 				BC1B9C6D20788222006350E8 /* BaseViewController.swift in Sources */,
 				BC74E9AA203D759000B5445A /* AppDelegate.swift in Sources */,
@@ -423,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/RxSwift-iOS-Demo/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "freeankit.com.RxSwift-iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -438,7 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/RxSwift-iOS-Demo/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "freeankit.com.RxSwift-iOS-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";

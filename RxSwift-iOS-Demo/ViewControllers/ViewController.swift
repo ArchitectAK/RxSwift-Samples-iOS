@@ -30,6 +30,9 @@ class ViewController: UIViewController {
         case 2:
             let v = GenerateOperatorVC()
             self.navigationController?.pushViewController(v, animated: true)
+        case 3:
+            let v = MapOperatorViewController()
+            self.navigationController?.pushViewController(v, animated: true)
         default:
             print("Nothing Selected")
         }

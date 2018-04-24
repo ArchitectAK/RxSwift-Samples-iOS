@@ -8,7 +8,7 @@ Learning RxSwift for iOS by Examples -How to use RxSwift in iOS
 * `Generate` -> generate operator can be used to create simple Observables that can generate their next emissions, and can determine when to terminate, based on the value of the previous emission
 
 * Coming More
-## TODO
+## TODO 
 
 Adding more operator examples
 

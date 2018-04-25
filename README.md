@@ -4,8 +4,10 @@ Learning RxSwift for iOS by Examples -How to use RxSwift in iOS
 
 
 # Operators :
-* `Create` -> Creates an Observable from scratch by means of a function
-* `Generate` -> generate operator can be used to create simple Observables that can generate their next emissions, and can determine when to terminate, based on the value of the previous emission
+* `create()` -> Creates an Observable from scratch by means of a function
+* `generate()` -> generate operator can be used to create simple Observables that can generate their next emissions, and can determine when to terminate, based on the value of the previous emission
+* `map()` -> Transform the items emitted by an Observable by applying a function to each item
+* `enumerated().map()` or `mapWithIndex()` -> Transform the items emitted by an Observable by applying a function to each item
 
 * Coming More
 ## TODO 

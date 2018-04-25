@@ -33,6 +33,9 @@ class ViewController: UIViewController {
         case 3:
             let v = MapOperatorViewController()
             self.navigationController?.pushViewController(v, animated: true)
+        case 4:
+            let v = MapWithIndexViewController()
+            self.navigationController?.pushViewController(v, animated: true)
         default:
             print("Nothing Selected")
         }

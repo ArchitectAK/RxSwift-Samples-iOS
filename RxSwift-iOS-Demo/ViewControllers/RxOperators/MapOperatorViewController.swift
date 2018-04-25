@@ -39,7 +39,7 @@ class MapOperatorViewController : BaseViewController {
             .subscribe(onNext: { (number) in
               self.myCustomView?.commonLbl.text = (self.myCustomView?.commonLbl.text ?? "") + "\n onNext "+"\(number)"
             })
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         
     }
     

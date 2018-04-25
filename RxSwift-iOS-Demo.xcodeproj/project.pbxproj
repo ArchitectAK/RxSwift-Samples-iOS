@@ -14,6 +14,7 @@
 		BC1B9C6D20788222006350E8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1B9C6C20788222006350E8 /* BaseViewController.swift */; };
 		BC1B9C6F20788898006350E8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC1B9C6E20788898006350E8 /* README.md */; };
 		BC3FF13220806F7D00D41AC1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3FF13120806F7D00D41AC1 /* User.swift */; };
+		BC49B72C209065CE00480137 /* MapWithIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B72B209065CE00480137 /* MapWithIndexViewController.swift */; };
 		BC74E9AA203D759000B5445A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74E9A9203D759000B5445A /* AppDelegate.swift */; };
 		BC74E9AC203D759000B5445A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC74E9AB203D759000B5445A /* ViewController.swift */; };
 		BC74E9AF203D759000B5445A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC74E9AD203D759000B5445A /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		BC1B9C6C20788222006350E8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BC1B9C6E20788898006350E8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		BC3FF13120806F7D00D41AC1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BC49B72B209065CE00480137 /* MapWithIndexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWithIndexViewController.swift; sourceTree = "<group>"; };
 		BC74E9A6203D759000B5445A /* RxSwift-iOS-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwift-iOS-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC74E9A9203D759000B5445A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC74E9AB203D759000B5445A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				BC1B9C652076254C006350E8 /* CreateOperatorViewController.swift */,
 				BCD8D2E920453D980026007D /* GenerateOperatorVC.swift */,
 				BCD8D2EB20453DA90026007D /* MapOperatorViewController.swift */,
+				BC49B72B209065CE00480137 /* MapWithIndexViewController.swift */,
 			);
 			path = RxOperators;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				BCD8D2EA20453D980026007D /* GenerateOperatorVC.swift in Sources */,
 				BC1B9C64207623D8006350E8 /* CommonView.swift in Sources */,
 				BC3FF13220806F7D00D41AC1 /* User.swift in Sources */,
+				BC49B72C209065CE00480137 /* MapWithIndexViewController.swift in Sources */,
 				BC74E9AC203D759000B5445A /* ViewController.swift in Sources */,
 				BC1B9C6D20788222006350E8 /* BaseViewController.swift in Sources */,
 				BC74E9AA203D759000B5445A /* AppDelegate.swift in Sources */,
